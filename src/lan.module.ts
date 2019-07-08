@@ -5,19 +5,18 @@ import { IonicModule } from '@ionic/angular';
 import { MCardComponent } from './components/m-card/m-card.component';
 import { MHeaderComponent } from './components/m-header/m-header.component';
 
+const DECLARATION = [
+    MCardComponent,
+    MHeaderComponent
+];
+
 @NgModule({
     imports: [
         CommonModule,
         IonicModule
     ],
-    declarations: [
-        MCardComponent,
-        MHeaderComponent
-    ],
-    exports: [
-        MCardComponent,
-        MHeaderComponent
-    ],
+    declarations: DECLARATION,
+    exports: DECLARATION,
     providers: [
         DeviceFeedback
     ]

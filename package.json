@@ -1,6 +1,6 @@
 {
   "name": "ion-lan",
-  "version": "0.0.10",
+  "version": "0.0.12",
   "description": "Modern ui components for ionic 4",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
@@ -9,15 +9,17 @@
   ],
   "scripts": {
     "ngc": "ngc",
-    "build": "npm run ngc",
+    "build": "rmdir /s /Q dist && npm run ngc",
     "publishPackage": "npm run build && npm publish"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mazlanmohdnor/ion-lan.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "ionic"
+  ],
+  "author": "Mohd Mazlan",
   "license": "MIT",
   "devDependencies": {
     "@angular/common": "^7.2.2",
