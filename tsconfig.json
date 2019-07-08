@@ -20,6 +20,7 @@
     "scripts"
   ],
   "angularCompilerOptions": {
-    "genDir": "aot"
+    "skipTemplateCodegen": true,
+    "enableResourceInlining": true
   }
 }
